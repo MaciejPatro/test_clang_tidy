@@ -12,11 +12,13 @@ conan_cmake_run(
 )
 
 set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,google-readability-todo")
-set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,google-readability-todo;--header-filter=.*")
-set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,google-readability-todo;--header-filter=.*some.*")
+#set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,google-readability-todo;--header-filter=.*")
+#set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,google-readability-todo;--header-filter=.*some.*")
 
 # Something works wrong here!
-set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,clang-analyzer-cplusplus*,google-readability-todo;--header-filter=.*some.*")
+#set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,clang-analyzer-cplusplus*,google-readability-todo)
+#set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,clang-analyzer-cplusplus*,google-readability-todo;--header-filter=.*")
+#set(CMAKE_CXX_CLANG_TIDY "clang-tidy-12;-checks=-*,clang-analyzer-cplusplus*,google-readability-todo;--header-filter=.*some.*")
 
 include(CTest)
 add_subdirectory(source)
